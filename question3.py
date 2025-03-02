@@ -1,13 +1,17 @@
-s = input("Enter a string: ")
+names=set()
+#adding the names
+names.add("Messi")
+names.add("Ronaldo")
+names.add("Neymar")
+names.add("Modric")
+names.add("Mbappe")
+print("The original set:", names)
+#modifying one name
+names.discard("Mbappe")
+names.add("Vishwa")
+print("The set after modifying one name", names)
+#delete two name
+names.add("Messi")
+names.add("Ronaldo")
+print("The set after deleting two names is :", names)
 
-alphabets = 0
-digits = 0
-
-for char in s:
-    if char.isalpha():
-        alphabets += 1
-    elif char.isdigit():
-        digits += 1
-
-print("Alphabets:", alphabets)
-print("Digits:", digits)
